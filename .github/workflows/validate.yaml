@@ -27,6 +27,7 @@ jobs:
       with:
         title: AU Core
   ValidateERequesting:
+    if: ${{ hashFiles('erequesting/**') != '' }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
